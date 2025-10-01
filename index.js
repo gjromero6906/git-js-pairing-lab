@@ -56,10 +56,21 @@ function isNegative(n){
 }
 console.log (isNegative(3));
 console.log(isNegative(-2));
-
+//8
 function triangleArea(b,h){
     return (b*h)/2;
 
     } 
      console.log(triangleArea(5,7));
     console.log(triangleArea(6,8));
+//9
+function betweenTwentyAndFourty(n){
+ if(n >20 && n<40){
+    return true;
+ }else{
+    return false;
+ }
+}
+console.log(betweenTwentyAndFourty(20));
+console.log(betweenTwentyAndFourty(39));
+console.log(betweenTwentyAndFourty(40));
