@@ -63,3 +63,4 @@ function triangleArea(b,h){
     } 
      console.log(triangleArea(5,7));
     console.log(triangleArea(6,8));
+    
