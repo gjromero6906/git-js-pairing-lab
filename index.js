@@ -38,3 +38,11 @@ function multiply(a,b){
     return a*b;
 }
 console.log(multiply(5,5));
+
+function add(a,b){
+    if (a===b)
+    return ((a+b)*3);
+    else return a+b;
+}
+console.log(add(6,6));
+console.log(add(6,5));
