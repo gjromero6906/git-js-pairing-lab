@@ -38,7 +38,7 @@ function multiply(a,b){
     return a*b;
 }
 console.log(multiply(5,5));
-
+//6
 function add(a,b){
     if (a===b)
     return ((a+b)*3);
@@ -46,3 +46,13 @@ function add(a,b){
 }
 console.log(add(6,6));
 console.log(add(6,5));
+//7
+function isNegative(n){
+    if (n>=0){
+        return false;
+    }else{
+        return true;
+    }
+}
+console.log (isNegative(3));
+console.log(isNegative(-2));
