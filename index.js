@@ -75,3 +75,14 @@ console.log(betweenTwentyAndFourty(20));
 console.log(betweenTwentyAndFourty(39));
 console.log(betweenTwentyAndFourty(40));
 //11 15 16
+
+//11
+function printTime(){
+    let now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    console.log(`${hours}:${minutes}:${seconds}`);
+}
+printTime();
