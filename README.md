@@ -110,7 +110,7 @@ untilNum(42)   //prints out numbers 1 through 42
 ```
 
 5. Write a function `multiply` that takes in two number parameters and **returns** their product.
-```
+
 multiply(2, 4)     //returns 8
 multiply(10, -5)   //returns -50
 multiply(3, 7.5)   //returns 22.5

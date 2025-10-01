@@ -23,3 +23,12 @@ function multiplesOfThreeOrFive(){
     }
 }
 multiplesOfThreeOrFive();
+
+
+function untilNum(num){
+    for(let i = 0; i <= num; i++){
+        console.log(i);
+    
+    }
+}
+untilNum(41);
