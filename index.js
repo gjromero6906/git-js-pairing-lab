@@ -86,20 +86,40 @@ function printTime(){
     console.log(`${hours}:${minutes}:${seconds}`);
 }
 printTime();
-
+//15
 function switchLetters(str){
     let newStr ='';
-    let data = String(str);
+    let data = String(str).toLowerCase();
     let numOfChar = data.length;
-    if (numOfChar <= 1){
+    if (data ===' '){
+        console.log("");
+    }else if (numOfChar <= 1){
         console.log(str)
-    }else{
+    }
+    else{
         newStr+=data.charAt(numOfChar-1);
         for(let i =1;i < numOfChar-1;i++){
             newStr+= data.charAt(i);
         }
         newStr+=data.charAt(0);
+        console.log(newStr);
+    }
+}
+switchLetters("abc");
+switchLetters("hello world");
+switchLetters("a");
+switchLetters('');
+//16
+function changeString(str){
+    let newStr = '';
+    let data =String(str).toLowerCase();
+    let numOfChar = data.length;
+    let abcs = "abcdefghijklmnopqrstuvwxyz"
+    for(let i =0;i<numOfChar;i++){
+        let indexInAbc = abcs.indexOf(data.charAt(i));
+        newStr+=abcs.charAt(indexInAbc+1);
     }
     console.log(newStr);
 }
-switchLetters("abc");
+changeString("abc");
+changeString("helloworld");
