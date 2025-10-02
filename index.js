@@ -116,10 +116,14 @@ function changeString(str){
     let numOfChar = data.length;
     let abcs = "abcdefghijklmnopqrstuvwxyz"
     for(let i =0;i<numOfChar;i++){
-        let indexInAbc = abcs.indexOf(data.charAt(i));
-        newStr+=abcs.charAt(indexInAbc+1);
+        if(data.charAt(i)===String('z')){
+            newStr +='a'
+        }else{
+            let indexInAbc = abcs.indexOf(data.charAt(i));
+            newStr+=abcs.charAt(indexInAbc+1);  
+        } 
     }
     console.log(newStr);
 }
 changeString("abc");
-changeString("helloworld");
+changeString("zab")
