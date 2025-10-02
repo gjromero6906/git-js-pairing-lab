@@ -86,3 +86,20 @@ function printTime(){
     console.log(`${hours}:${minutes}:${seconds}`);
 }
 printTime();
+
+function switchLetters(str){
+    let newStr ='';
+    let data = String(str);
+    let numOfChar = data.length;
+    if (numOfChar <= 1){
+        console.log(str)
+    }else{
+        newStr+=data.charAt(numOfChar-1);
+        for(let i =1;i < numOfChar-1;i++){
+            newStr+= data.charAt(i);
+        }
+        newStr+=data.charAt(0);
+    }
+    console.log(newStr);
+}
+switchLetters("abc");
