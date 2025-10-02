@@ -126,4 +126,5 @@ function changeString(str){
     console.log(newStr);
 }
 changeString("abc");
-changeString("zab")
+changeString("zab");
+changeString("helloworld");
