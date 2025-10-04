@@ -91,3 +91,52 @@ function largest(a,b,c){
 console.log(largest(4,6,8))
 console.log(largest(30,22,17))
 console.log(largest(41,108,86))
+
+//12
+function isLeapYear(year){
+    //rules of a leap year divisiable by 4, 100 unless also divisible by 400
+    if ((year % 4 ===0 && year % 100 !==0) || (year % 400 ===0)){
+        return true
+    }else{
+        return false
+    }
+}
+console.log(isLeapYear(2000))
+console.log(isLeapYear(1900))
+console.log(isLeapYear(2020))
+console.log(isLeapYear(1999))
+
+//13
+function getExtention(filename){
+    let parts = filename.split('.')
+    //this seperates the filename into the different parts seperated bby the dots or periods
+    return parts[parts.length - 1]
+    //-1 makes it go to the last item, so this should be the extention
+}
+//add a period in the console.log to make it actually print out the expected, without it it would just print txt,js,md
+console.log("." + getExtention("hello.txt"))     //returns ".txt"
+console.log("." + getExtention("app.js"))        //returns ".js"
+console.log("." + getExtention("README.md"))     //returns ".md"
+
+//14
+function absoluteNineteen(num) {
+    let differ = Math.abs(num - 19)
+    //Math.abs makes it into absolute value automatically
+    if (num > 19) {
+        return differ * 3
+        //if its above 19 it will multiply the difference by 3
+    } else {
+        return differ
+    }
+    }
+    console.log(absoluteNineteen(8))  
+    console.log(absoluteNineteen(26))  
+    console.log(absoluteNineteen(7))   
+    console.log(absoluteNineteen(30))  
+    console.log(absoluteNineteen(11)) 
+    console.log(absoluteNineteen(-20)) 
+    console.log(absoluteNineteen(-2))
+    //19 minus negitive 20 is just 19 plus 20 so 39(line 137)
+    //19 minus negitive 2 is just 19 plus 2 so 21(line 138)
+    
+    
