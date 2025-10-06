@@ -74,6 +74,60 @@ function betweenTwentyAndFourty(n){
 console.log(betweenTwentyAndFourty(20));
 console.log(betweenTwentyAndFourty(39));
 console.log(betweenTwentyAndFourty(40));
+//11 15 16
+
+//11
+function printTime(){
+    let now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    console.log(`${hours}:${minutes}:${seconds}`);
+}
+printTime();
+//15
+function switchLetters(str){
+    let newStr ='';
+    let data = String(str).toLowerCase();
+    let numOfChar = data.length;
+    if (data ===' '){
+        console.log("");
+    }else if (numOfChar <= 1){
+        console.log(str)
+    }
+    else{
+        newStr+=data.charAt(numOfChar-1);
+        for(let i =1;i < numOfChar-1;i++){
+            newStr+= data.charAt(i);
+        }
+        newStr+=data.charAt(0);
+        console.log(newStr);
+    }
+}
+switchLetters("abc");
+switchLetters("hello world");
+switchLetters("a");
+switchLetters('');
+//16
+function changeString(str){
+    let newStr = '';
+    let data =String(str).toLowerCase();
+    let numOfChar = data.length;
+    let abcs = "abcdefghijklmnopqrstuvwxyz"
+    for(let i =0;i<numOfChar;i++){
+        if(data.charAt(i)===String('z')){
+            newStr +='a'
+        }else{
+            let indexInAbc = abcs.indexOf(data.charAt(i));
+            newStr+=abcs.charAt(indexInAbc+1);  
+        } 
+    }
+    console.log(newStr);
+}
+changeString("abc");
+changeString("zab");
+changeString("helloworld");
 
 function largest(a,b,c){
     if (a > b && a > c){
